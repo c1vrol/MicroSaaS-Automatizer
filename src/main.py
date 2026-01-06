@@ -32,6 +32,16 @@ def cargar_misiones():
         logger.error(f"Error al leer config/tareas.json: {e}")
         sys.exit(1)
 
+def guardar_misiones(misiones):
+    """Guarda la lista de misiones en el archivo JSON"""
+    try:
+        data = {"misiones": misiones}
+        with open("config/tareas.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        logger.success("Configuración guardada correctamente.")
+    except Exception as e:
+        logger.error(f"Error al guardar config/tareas.json: {e}")
+
 def ejecutar_mision(mision, user, password):
     """Lógica genérica de ejecución de misiones"""
     logger.info(f"--- Iniciando Misión: {mision['nombre']} ---")
