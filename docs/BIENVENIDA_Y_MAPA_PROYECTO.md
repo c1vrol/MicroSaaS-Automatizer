@@ -16,5 +16,7 @@ Bienvenido al proyecto de automatización segura. Este repositorio es un ejemplo
 - **[Estándares y Reglas de Oro](../ESTANDARES_Y_REGLAS_ORO.md):** Manual de calidad del código.
 - **[Explicación del Cerebro](../src/EXPLICACION_CEREBRO_LOGICA.md):** Cómo funciona la lógica de scraping.
 
+- **[GitHub Repository](https://github.com/c1vrol/MicroSaaS-Automatizer):** Repositorio privado del proyecto.
+
 ---
 *Desarrollado para fines educativos y de Micro-SaaS de alta seguridad.*
